@@ -1,9 +1,6 @@
 from learning_wavelets.training_scripts.exact_recon_unet_training import train_unet
 from learning_wavelets.evaluation_scripts.exact_recon_unet_evaluate import evaluate_unet
 
-import numpy as np
-from scipy.stats import ttest_ind
-
 from jean_zay.submitit.general_submissions import train_eval_grid
 
 
