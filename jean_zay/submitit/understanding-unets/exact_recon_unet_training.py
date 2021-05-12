@@ -22,7 +22,7 @@ base_parameters = dict(
 )
 
 parameters = [
-    dict(**base_parameters)
+    base_parameters,
 ]
 
 res_all = train_eval_grid(
