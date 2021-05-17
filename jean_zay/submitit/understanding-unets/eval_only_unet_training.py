@@ -6,7 +6,6 @@ from jean_zay.submitit.general_submissions import train_eval_grid
 
 job_name = 'exact_recon_unet_training'
 n_epochs = 100
-batch_size = 8
 base_n_filters = 4
 n_layers = 4 
 non_linearity = 'relu'
