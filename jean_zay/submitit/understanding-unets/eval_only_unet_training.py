@@ -34,7 +34,7 @@ res_all = eval_grid(
     job_name,
     evaluate_unet,
     parameters,
-    run_ids=run_id,
+    run_ids=[run_id],
     to_grid=False,
     timeout=1,
     n_gpus=n_gpus,
