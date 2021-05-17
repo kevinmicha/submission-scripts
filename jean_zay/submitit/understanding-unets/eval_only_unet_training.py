@@ -13,7 +13,7 @@ non_linearity = 'relu'
 bn = True,
 exact_recon = True,
 run_id = 'ExactReconUnet_4_bsd500_0_55_None_1620730822'
-n_gpus = 2
+n_gpus = 1
 possible_std_dev = [0.0001, 5, 15, 20, 25, 30, 50, 55, 60, 75]
 
 base_parameters = dict(
