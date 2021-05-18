@@ -10,8 +10,8 @@ batch_size = 8
 base_n_filters = 4
 n_layers = 4 
 non_linearity = 'relu'
-bn = True,
-exact_recon = True,
+bn = True
+exact_recon = True
 n_gpus = 2
 possible_std_dev = [0.0001, 5, 15, 20, 25, 30, 50, 55, 60, 75]
 
