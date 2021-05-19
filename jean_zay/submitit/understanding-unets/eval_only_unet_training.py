@@ -1,7 +1,6 @@
-from learning_wavelets.training_scripts.exact_recon_unet_training import train_unet
 from learning_wavelets.evaluation_scripts.exact_recon_unet_evaluate import evaluate_unet
 
-from jean_zay.submitit.general_submissions import train_eval_grid
+from jean_zay.submitit.general_submissions import eval_grid
 
 
 job_name = 'exact_recon_unet_training'
