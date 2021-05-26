@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=learnlet_unet     # nom du job
+#SBATCH --job-name=learnlets_unet     # nom du job
 #SBATCH --ntasks=1                   # nombre de tâche MPI
 #SBATCH --ntasks-per-node=1          # nombre de tâche MPI par noeud
 #SBATCH --gres=gpu:2                 # nombre de GPU à réserver par nœud
@@ -13,9 +13,11 @@
 #SBATCH --error=unet%j.out  # nom du fichier d'erreur (ici commun avec la sortie)
 ​
 set -x
-cd $WORK/understanding-unets
+cd $WORK/submission-scripts/jean_zay/env_configs/
 
-. ./submission_scripts_jean_zay/env_config.sh
+. learnlets.sh
+
+cd $WORK/understanding-unets
 
 srun --ntasks=1 python ./learning_wavelets/training_scripts/unet_training.py -gpus 01
 
