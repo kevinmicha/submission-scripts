@@ -11,7 +11,7 @@
 #SBATCH --time=06:00:00              # temps d’exécution maximum demande (HH:MM:SS)
 #SBATCH --output=unet%j.out # nom du fichier de sortie
 #SBATCH --error=unet%j.out  # nom du fichier d'erreur (ici commun avec la sortie)
-​
+
 set -x
 cd $WORK/submission-scripts/jean_zay/env_configs/
 
